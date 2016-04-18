@@ -20,13 +20,14 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="h8U-Fl-Ahm">
                                 <rect key="frame" x="20" y="121" width="280" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" spellCheckingType="no" keyboardType="webSearch" keyboardAppearance="alert" returnKeyType="send"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="search"/>
                                 <connections>
                                     <action selector="buscar:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="Ui9-WA-WL9"/>
+                                    <action selector="textFieldReturn:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="ggy-31-4OQ"/>
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Autor" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3cq-6Q-gkb">
-                                <rect key="frame" x="20" y="388" width="280" height="21"/>
+                                <rect key="frame" x="20" y="282" width="280" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -39,7 +40,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Titulo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kek-rQ-0R6">
-                                <rect key="frame" x="20" y="297" width="280" height="21"/>
+                                <rect key="frame" x="20" y="246" width="280" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -50,6 +51,9 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DsF-Ip-c9W">
+                                <rect key="frame" x="40" y="321" width="240" height="206"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -57,6 +61,7 @@
                         <outlet property="alerta" destination="gxd-cR-p9p" id="nQ4-4t-Xty"/>
                         <outlet property="bookAutor" destination="3cq-6Q-gkb" id="1vG-sL-4w7"/>
                         <outlet property="bookTitle" destination="Kek-rQ-0R6" id="i8J-Ms-z4n"/>
+                        <outlet property="cover" destination="DsF-Ip-c9W" id="M5I-br-Kg2"/>
                         <outlet property="textField" destination="h8U-Fl-Ahm" id="eiD-pQ-HRm"/>
                     </connections>
                 </viewController>
